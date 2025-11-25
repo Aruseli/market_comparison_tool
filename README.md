@@ -4,8 +4,8 @@
 
 ## Технологии
 
-- Next.js 14+ (App Router)
-- React 18
+- Next.js 15+ (App Router)
+- React 19
 - TypeScript
 - Tailwind CSS
 
