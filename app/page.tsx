@@ -5,6 +5,7 @@ import { Match } from "@/types";
 import { EventCard } from "@/components/EventCard";
 import { SearchBar } from "@/components/SearchBar";
 import { Logo } from "@/components/Logo";
+import { getMatches } from "@/utils/events";
 
 const CATEGORIES = [
   "all",
@@ -26,18 +27,12 @@ export default function Home() {
     fetchEvents();
   }, [selectedCategory, searchQuery]);
 
-  const fetchEvents = async () => {
+  const fetchEvents = () => {
     setLoading(true);
     try {
-      const params = new URLSearchParams();
-      if (selectedCategory !== "all") {
-        params.append("category", selectedCategory);
-      }
-      if (searchQuery) {
-        params.append("search", searchQuery);
-      }
-      const response = await fetch(`/api/events?${params.toString()}`);
-      const data = await response.json();
+      const category = selectedCategory !== "all" ? selectedCategory : undefined;
+      const search = searchQuery || undefined;
+      const data = getMatches(category, search);
       setMatches(data);
     } catch (error) {
       console.error("Error fetching events:", error);

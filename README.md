@@ -51,6 +51,10 @@ market/
 └── utils/                 # Утилиты
 ```
 
+## Деплой на GitHub Pages
+
+Проект настроен для автоматического деплоя на GitHub Pages через GitHub Actions.
+
 ## Данные
 
 В текущей версии используются моковые данные из `data/events.json`. Для интеграции с реальными API см. план в `api-integration-plan.md`.
