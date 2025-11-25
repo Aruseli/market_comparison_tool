@@ -27,7 +27,7 @@ export const EventCard = ({ match }: EventCardProps) => {
           </span>
         </div>
         <div className="flex items-center justify-between">
-          <div className="flex space-4">
+          <div className="flex space-x-4">
             <div>
               <span className="text-xs text-gray-500 mr-1">Мин:</span>
               <span className="text-sm font-medium text-red-600">
