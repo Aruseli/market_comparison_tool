@@ -1,0 +1,503 @@
+[
+  {
+    "id": "trump-2024-election",
+    "normalizedTitle": "Will Donald Trump win the 2024 US Presidential Election?",
+    "description": "Presidential election outcome prediction",
+    "category": "Политика",
+    "tags": ["USA", "election", "Trump", "president"],
+    "resolutionDate": "2024-11-05",
+    "markets": [
+      {
+        "id": "poly-trump-2024",
+        "platform": "polymarket",
+        "originalTitle": "Trump wins 2024 US Presidential Election",
+        "probability": 63,
+        "volume": 1250000,
+        "liquidity": 450000,
+        "link": "https://polymarket.com/event/trump-wins-2024",
+        "updatedAt": "2024-01-15T10:30:00Z"
+      },
+      {
+        "id": "manifold-trump-2024",
+        "platform": "manifold",
+        "originalTitle": "Trump elected US President in 2024",
+        "probability": 55,
+        "volume": 850000,
+        "liquidity": 320000,
+        "link": "https://manifold.markets/trump-elected-2024",
+        "updatedAt": "2024-01-15T10:25:00Z"
+      },
+      {
+        "id": "kalshi-trump-2024",
+        "platform": "kalshi",
+        "originalTitle": "TRUMP.WIN.PRES.2024",
+        "probability": 60,
+        "volume": 2100000,
+        "liquidity": 780000,
+        "link": "https://kalshi.com/markets/TRUMP.WIN.PRES.2024",
+        "updatedAt": "2024-01-15T10:28:00Z"
+      }
+    ]
+  },
+  {
+    "id": "bitcoin-100k",
+    "normalizedTitle": "Will Bitcoin reach $100,000 by end of 2024?",
+    "description": "Bitcoin price prediction",
+    "category": "Криптовалюты",
+    "tags": ["Bitcoin", "BTC", "crypto", "price"],
+    "resolutionDate": "2024-12-31",
+    "markets": [
+      {
+        "id": "poly-btc-100k",
+        "platform": "polymarket",
+        "originalTitle": "Bitcoin above $100k by Dec 31, 2024",
+        "probability": 42,
+        "volume": 980000,
+        "liquidity": 380000,
+        "link": "https://polymarket.com/event/btc-100k-2024",
+        "updatedAt": "2024-01-15T09:15:00Z"
+      },
+      {
+        "id": "manifold-btc-100k",
+        "platform": "manifold",
+        "originalTitle": "Bitcoin price >= $100,000 on Dec 31, 2024",
+        "probability": 38,
+        "volume": 650000,
+        "liquidity": 240000,
+        "link": "https://manifold.markets/btc-100k-2024",
+        "updatedAt": "2024-01-15T09:10:00Z"
+      },
+      {
+        "id": "kalshi-btc-100k",
+        "platform": "kalshi",
+        "originalTitle": "BTC.ABOVE.100K.2024",
+        "probability": 45,
+        "volume": 1200000,
+        "liquidity": 520000,
+        "link": "https://kalshi.com/markets/BTC.ABOVE.100K.2024",
+        "updatedAt": "2024-01-15T09:20:00Z"
+      }
+    ]
+  },
+  {
+    "id": "fed-rate-cut-2024",
+    "normalizedTitle": "Will the Fed cut interest rates in 2024?",
+    "description": "Federal Reserve interest rate decision",
+    "category": "Экономика",
+    "tags": ["Fed", "interest rates", "economy", "USA"],
+    "resolutionDate": "2024-12-31",
+    "markets": [
+      {
+        "id": "poly-fed-cut",
+        "platform": "polymarket",
+        "originalTitle": "Fed cuts rates in 2024",
+        "probability": 78,
+        "volume": 2100000,
+        "liquidity": 890000,
+        "link": "https://polymarket.com/event/fed-cuts-2024",
+        "updatedAt": "2024-01-15T11:00:00Z"
+      },
+      {
+        "id": "manifold-fed-cut",
+        "platform": "manifold",
+        "originalTitle": "Federal Reserve reduces interest rates in 2024",
+        "probability": 72,
+        "volume": 1400000,
+        "liquidity": 560000,
+        "link": "https://manifold.markets/fed-rate-cut-2024",
+        "updatedAt": "2024-01-15T10:55:00Z"
+      }
+    ]
+  },
+  {
+    "id": "euro-2024-winner",
+    "normalizedTitle": "Who will win UEFA Euro 2024?",
+    "description": "European Championship football tournament",
+    "category": "Спорт",
+    "tags": ["football", "Euro 2024", "soccer", "tournament"],
+    "resolutionDate": "2024-07-14",
+    "markets": [
+      {
+        "id": "poly-euro-england",
+        "platform": "polymarket",
+        "originalTitle": "England wins Euro 2024",
+        "probability": 28,
+        "volume": 450000,
+        "liquidity": 180000,
+        "link": "https://polymarket.com/event/england-euro-2024",
+        "updatedAt": "2024-01-15T08:30:00Z"
+      },
+      {
+        "id": "manifold-euro-england",
+        "platform": "manifold",
+        "originalTitle": "England is Euro 2024 champion",
+        "probability": 25,
+        "volume": 320000,
+        "liquidity": 120000,
+        "link": "https://manifold.markets/england-euro-2024",
+        "updatedAt": "2024-01-15T08:25:00Z"
+      },
+      {
+        "id": "kalshi-euro-england",
+        "platform": "kalshi",
+        "originalTitle": "EURO.ENG.WIN.2024",
+        "probability": 30,
+        "volume": 580000,
+        "liquidity": 240000,
+        "link": "https://kalshi.com/markets/EURO.ENG.WIN.2024",
+        "updatedAt": "2024-01-15T08:35:00Z"
+      }
+    ]
+  },
+  {
+    "id": "ai-regulation-2024",
+    "normalizedTitle": "Will major AI regulation pass in the US in 2024?",
+    "description": "AI legislation prediction",
+    "category": "Технологии",
+    "tags": ["AI", "regulation", "USA", "legislation"],
+    "resolutionDate": "2024-12-31",
+    "markets": [
+      {
+        "id": "poly-ai-reg",
+        "platform": "polymarket",
+        "originalTitle": "Major AI regulation passes US Congress in 2024",
+        "probability": 35,
+        "volume": 670000,
+        "liquidity": 250000,
+        "link": "https://polymarket.com/event/ai-regulation-2024",
+        "updatedAt": "2024-01-15T12:00:00Z"
+      },
+      {
+        "id": "manifold-ai-reg",
+        "platform": "manifold",
+        "originalTitle": "US Congress passes significant AI regulation in 2024",
+        "probability": 32,
+        "volume": 480000,
+        "liquidity": 190000,
+        "link": "https://manifold.markets/ai-regulation-2024",
+        "updatedAt": "2024-01-15T11:55:00Z"
+      }
+    ]
+  },
+  {
+    "id": "tesla-stock-300",
+    "normalizedTitle": "Will Tesla stock reach $300 by end of 2024?",
+    "description": "Tesla stock price prediction",
+    "category": "Финансы",
+    "tags": ["Tesla", "TSLA", "stock", "price"],
+    "resolutionDate": "2024-12-31",
+    "markets": [
+      {
+        "id": "poly-tesla-300",
+        "platform": "polymarket",
+        "originalTitle": "Tesla stock >= $300 on Dec 31, 2024",
+        "probability": 48,
+        "volume": 890000,
+        "liquidity": 340000,
+        "link": "https://polymarket.com/event/tesla-300-2024",
+        "updatedAt": "2024-01-15T13:15:00Z"
+      },
+      {
+        "id": "manifold-tesla-300",
+        "platform": "manifold",
+        "originalTitle": "Tesla (TSLA) stock price >= $300 on Dec 31, 2024",
+        "probability": 52,
+        "volume": 720000,
+        "liquidity": 280000,
+        "link": "https://manifold.markets/tesla-300-2024",
+        "updatedAt": "2024-01-15T13:10:00Z"
+      },
+      {
+        "id": "kalshi-tesla-300",
+        "platform": "kalshi",
+        "originalTitle": "TSLA.ABOVE.300.2024",
+        "probability": 50,
+        "volume": 1100000,
+        "liquidity": 450000,
+        "link": "https://kalshi.com/markets/TSLA.ABOVE.300.2024",
+        "updatedAt": "2024-01-15T13:20:00Z"
+      }
+    ]
+  },
+  {
+    "id": "ukraine-war-end-2024",
+    "normalizedTitle": "Will the war in Ukraine end in 2024?",
+    "description": "Ukraine conflict resolution prediction",
+    "category": "Политика",
+    "tags": ["Ukraine", "war", "conflict", "Russia"],
+    "resolutionDate": "2024-12-31",
+    "markets": [
+      {
+        "id": "poly-ukraine-end",
+        "platform": "polymarket",
+        "originalTitle": "Ukraine war ends in 2024",
+        "probability": 22,
+        "volume": 1560000,
+        "liquidity": 620000,
+        "link": "https://polymarket.com/event/ukraine-war-end-2024",
+        "updatedAt": "2024-01-15T14:00:00Z"
+      },
+      {
+        "id": "manifold-ukraine-end",
+        "platform": "manifold",
+        "originalTitle": "War in Ukraine ends before Dec 31, 2024",
+        "probability": 18,
+        "volume": 980000,
+        "liquidity": 380000,
+        "link": "https://manifold.markets/ukraine-war-end-2024",
+        "updatedAt": "2024-01-15T13:55:00Z"
+      }
+    ]
+  },
+  {
+    "id": "chatgpt-5-release",
+    "normalizedTitle": "Will GPT-5 be released in 2024?",
+    "description": "OpenAI GPT-5 release prediction",
+    "category": "Технологии",
+    "tags": ["GPT-5", "OpenAI", "AI", "release"],
+    "resolutionDate": "2024-12-31",
+    "markets": [
+      {
+        "id": "poly-gpt5",
+        "platform": "polymarket",
+        "originalTitle": "GPT-5 released in 2024",
+        "probability": 65,
+        "volume": 1340000,
+        "liquidity": 510000,
+        "link": "https://polymarket.com/event/gpt5-2024",
+        "updatedAt": "2024-01-15T15:30:00Z"
+      },
+      {
+        "id": "manifold-gpt5",
+        "platform": "manifold",
+        "originalTitle": "OpenAI releases GPT-5 in 2024",
+        "probability": 58,
+        "volume": 920000,
+        "liquidity": 350000,
+        "link": "https://manifold.markets/gpt5-2024",
+        "updatedAt": "2024-01-15T15:25:00Z"
+      },
+      {
+        "id": "kalshi-gpt5",
+        "platform": "kalshi",
+        "originalTitle": "GPT5.RELEASE.2024",
+        "probability": 62,
+        "volume": 1680000,
+        "liquidity": 640000,
+        "link": "https://kalshi.com/markets/GPT5.RELEASE.2024",
+        "updatedAt": "2024-01-15T15:35:00Z"
+      }
+    ]
+  },
+  {
+    "id": "recession-2024",
+    "normalizedTitle": "Will there be a US recession in 2024?",
+    "description": "US economic recession prediction",
+    "category": "Экономика",
+    "tags": ["recession", "economy", "USA", "GDP"],
+    "resolutionDate": "2024-12-31",
+    "markets": [
+      {
+        "id": "poly-recession",
+        "platform": "polymarket",
+        "originalTitle": "US enters recession in 2024",
+        "probability": 28,
+        "volume": 1890000,
+        "liquidity": 720000,
+        "link": "https://polymarket.com/event/recession-2024",
+        "updatedAt": "2024-01-15T16:00:00Z"
+      },
+      {
+        "id": "manifold-recession",
+        "platform": "manifold",
+        "originalTitle": "United States experiences recession in 2024",
+        "probability": 25,
+        "volume": 1340000,
+        "liquidity": 510000,
+        "link": "https://manifold.markets/recession-2024",
+        "updatedAt": "2024-01-15T15:55:00Z"
+      },
+      {
+        "id": "kalshi-recession",
+        "platform": "kalshi",
+        "originalTitle": "US.RECESSION.2024",
+        "probability": 30,
+        "volume": 2100000,
+        "liquidity": 810000,
+        "link": "https://kalshi.com/markets/US.RECESSION.2024",
+        "updatedAt": "2024-01-15T16:05:00Z"
+      }
+    ]
+  },
+  {
+    "id": "spacex-starship-orbit",
+    "normalizedTitle": "Will SpaceX Starship reach orbit in 2024?",
+    "description": "SpaceX Starship orbital flight prediction",
+    "category": "Технологии",
+    "tags": ["SpaceX", "Starship", "space", "orbit"],
+    "resolutionDate": "2024-12-31",
+    "markets": [
+      {
+        "id": "poly-starship",
+        "platform": "polymarket",
+        "originalTitle": "SpaceX Starship reaches orbit in 2024",
+        "probability": 72,
+        "volume": 760000,
+        "liquidity": 290000,
+        "link": "https://polymarket.com/event/starship-orbit-2024",
+        "updatedAt": "2024-01-15T17:00:00Z"
+      },
+      {
+        "id": "manifold-starship",
+        "platform": "manifold",
+        "originalTitle": "SpaceX Starship successfully reaches orbit in 2024",
+        "probability": 68,
+        "volume": 540000,
+        "liquidity": 210000,
+        "link": "https://manifold.markets/starship-orbit-2024",
+        "updatedAt": "2024-01-15T16:55:00Z"
+      }
+    ]
+  },
+  {
+    "id": "nvidia-stock-600",
+    "normalizedTitle": "Will NVIDIA stock reach $600 by end of 2024?",
+    "description": "NVIDIA stock price prediction",
+    "category": "Финансы",
+    "tags": ["NVIDIA", "NVDA", "stock", "AI"],
+    "resolutionDate": "2024-12-31",
+    "markets": [
+      {
+        "id": "poly-nvidia-600",
+        "platform": "polymarket",
+        "originalTitle": "NVIDIA stock >= $600 on Dec 31, 2024",
+        "probability": 55,
+        "volume": 1120000,
+        "liquidity": 430000,
+        "link": "https://polymarket.com/event/nvidia-600-2024",
+        "updatedAt": "2024-01-15T18:00:00Z"
+      },
+      {
+        "id": "manifold-nvidia-600",
+        "platform": "manifold",
+        "originalTitle": "NVIDIA (NVDA) stock price >= $600 on Dec 31, 2024",
+        "probability": 58,
+        "volume": 890000,
+        "liquidity": 340000,
+        "link": "https://manifold.markets/nvidia-600-2024",
+        "updatedAt": "2024-01-15T17:55:00Z"
+      },
+      {
+        "id": "kalshi-nvidia-600",
+        "platform": "kalshi",
+        "originalTitle": "NVDA.ABOVE.600.2024",
+        "probability": 53,
+        "volume": 1340000,
+        "liquidity": 520000,
+        "link": "https://kalshi.com/markets/NVDA.ABOVE.600.2024",
+        "updatedAt": "2024-01-15T18:05:00Z"
+      }
+    ]
+  },
+  {
+    "id": "climate-agreement-2024",
+    "normalizedTitle": "Will a major new climate agreement be signed in 2024?",
+    "description": "International climate agreement prediction",
+    "category": "Политика",
+    "tags": ["climate", "environment", "agreement", "COP"],
+    "resolutionDate": "2024-12-31",
+    "markets": [
+      {
+        "id": "poly-climate",
+        "platform": "polymarket",
+        "originalTitle": "Major climate agreement signed in 2024",
+        "probability": 45,
+        "volume": 580000,
+        "liquidity": 220000,
+        "link": "https://polymarket.com/event/climate-agreement-2024",
+        "updatedAt": "2024-01-15T19:00:00Z"
+      },
+      {
+        "id": "manifold-climate",
+        "platform": "manifold",
+        "originalTitle": "New major international climate agreement signed in 2024",
+        "probability": 42,
+        "volume": 420000,
+        "liquidity": 160000,
+        "link": "https://manifold.markets/climate-agreement-2024",
+        "updatedAt": "2024-01-15T18:55:00Z"
+      }
+    ]
+  },
+  {
+    "id": "iphone-16-release",
+    "normalizedTitle": "Will iPhone 16 be released in 2024?",
+    "description": "Apple iPhone 16 release prediction",
+    "category": "Технологии",
+    "tags": ["iPhone", "Apple", "release", "mobile"],
+    "resolutionDate": "2024-12-31",
+    "markets": [
+      {
+        "id": "poly-iphone16",
+        "platform": "polymarket",
+        "originalTitle": "iPhone 16 released in 2024",
+        "probability": 88,
+        "volume": 980000,
+        "liquidity": 380000,
+        "link": "https://polymarket.com/event/iphone16-2024",
+        "updatedAt": "2024-01-15T20:00:00Z"
+      },
+      {
+        "id": "manifold-iphone16",
+        "platform": "manifold",
+        "originalTitle": "Apple releases iPhone 16 in 2024",
+        "probability": 85,
+        "volume": 720000,
+        "liquidity": 280000,
+        "link": "https://manifold.markets/iphone16-2024",
+        "updatedAt": "2024-01-15T19:55:00Z"
+      },
+      {
+        "id": "kalshi-iphone16",
+        "platform": "kalshi",
+        "originalTitle": "IPHONE16.RELEASE.2024",
+        "probability": 90,
+        "volume": 1240000,
+        "liquidity": 480000,
+        "link": "https://kalshi.com/markets/IPHONE16.RELEASE.2024",
+        "updatedAt": "2024-01-15T20:05:00Z"
+      }
+    ]
+  },
+  {
+    "id": "olympics-2024-records",
+    "normalizedTitle": "Will 10+ world records be broken at 2024 Olympics?",
+    "description": "Olympic Games world records prediction",
+    "category": "Спорт",
+    "tags": ["Olympics", "records", "sports", "2024"],
+    "resolutionDate": "2024-08-11",
+    "markets": [
+      {
+        "id": "poly-olympics-records",
+        "platform": "polymarket",
+        "originalTitle": "10+ world records broken at 2024 Olympics",
+        "probability": 62,
+        "volume": 670000,
+        "liquidity": 260000,
+        "link": "https://polymarket.com/event/olympics-records-2024",
+        "updatedAt": "2024-01-15T21:00:00Z"
+      },
+      {
+        "id": "manifold-olympics-records",
+        "platform": "manifold",
+        "originalTitle": "At least 10 world records broken at 2024 Olympics",
+        "probability": 58,
+        "volume": 480000,
+        "liquidity": 190000,
+        "link": "https://manifold.markets/olympics-records-2024",
+        "updatedAt": "2024-01-15T20:55:00Z"
+      }
+    ]
+  }
+]
+
