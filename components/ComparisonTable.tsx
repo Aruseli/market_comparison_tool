@@ -51,7 +51,7 @@ export const ComparisonTable = ({
           </tr>
         </thead>
         <tbody className="divide-y divide-gray-200">
-          {visibleMarkets.map((market) => {
+          {visibleMarkets.map((market, index) => {
             const isMin = market.probability === minProb;
             const isMax = market.probability === maxProb;
             const spread = isMax
@@ -60,9 +60,13 @@ export const ComparisonTable = ({
               ? `${(market.probability - maxProb).toFixed(1)}% vs max`
               : `${market.probability > (minProb + maxProb) / 2 ? "+" : ""}${(market.probability - (minProb + maxProb) / 2).toFixed(1)}%`;
 
+            // Создаем уникальный ключ, комбинируя id, platform и originalTitle для гарантии уникальности
+            // Используем индекс как fallback на случай, если все поля совпадут
+            const uniqueKey = `${market.id}-${market.platform}-${market.originalTitle || index}`;
+
             return (
               <tr
-                key={market.id}
+                key={uniqueKey}
                 className={`hover:bg-gray-50 ${
                   isMin ? "bg-red-50" : isMax ? "bg-green-50" : ""
                 }`}

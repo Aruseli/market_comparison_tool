@@ -1,10 +1,13 @@
 /** @type {import('next').NextConfig} */
 const isProduction = process.env.NODE_ENV === 'production';
+const isGitHubPages = process.env.GITHUB_PAGES === 'true';
 
 const nextConfig = {
-  ...(isProduction && { output: 'export' }),
-  basePath: isProduction ? '/market_comparison_tool' : '',
-  assetPrefix: isProduction ? '/market_comparison_tool' : '',
+  // Для GitHub Pages - статический экспорт
+  // Для Vercel - обычная сборка с API routes
+  ...(isGitHubPages && { output: 'export' }),
+  basePath: isGitHubPages ? '/market_comparison_tool' : '',
+  assetPrefix: isGitHubPages ? '/market_comparison_tool' : '',
   images: {
     unoptimized: true,
   },
