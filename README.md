@@ -8,6 +8,8 @@
 - React 19
 - TypeScript
 - Tailwind CSS
+- Prisma ORM + PostgreSQL (для кэширования матчей и истории)
+- TanStack React Query (для кэширования на клиенте)
 
 ## Установка и запуск
 
@@ -57,5 +59,78 @@ market/
 
 ## Данные
 
-В текущей версии используются моковые данные из `data/events.json`. Для интеграции с реальными API см. план в `api-integration-plan.md`.
+Проект поддерживает несколько режимов работы:
+- **Реальные данные** - через PolyRouter API (требует API ключ)
+- **База данных** - кэширование матчей в PostgreSQL через Prisma
+- **Моковые данные** - fallback на `data/events.json` при ошибках или отсутствии API ключа
+
+### Настройка PolyRouter API
+
+1. Создайте файл `.env.local`:
+```env
+POLYROUTER_API_KEY=your_api_key_here
+POLYROUTER_API_URL=https://api.polyrouter.io
+```
+
+2. API ключ будет использоваться только на Vercel (в переменных окружения)
+3. На GitHub Pages будет использоваться fallback на моковые данные
+
+### Настройка базы данных
+
+См. [DATABASE_SETUP.md](./DATABASE_SETUP.md) для подробных инструкций.
+
+**Кратко:**
+- Локально: установите PostgreSQL и создайте `.env.local` с `DATABASE_URL`
+- Vercel: создайте Postgres базу в Vercel Dashboard (автоматически настроит `DATABASE_URL`)
+- Примените миграции: `npx prisma migrate deploy`
+
+## Интеграция с PolyRouter
+
+Проект использует **PolyRouter API** как единый источник данных для всех платформ:
+- Polymarket
+- Manifold Markets
+- Kalshi
+
+### Текущий подход
+
+**PolyRouter как агрегатор:**
+- Единый API вместо трёх разных (Polymarket GraphQL, Manifold REST, Kalshi REST)
+- Нормализованная структура данных
+- Упрощённая интеграция и поддержка
+
+**Матчинг:**
+- PolyRouter не делает кросс‑платформенный матчинг автоматически
+- Каждое событие/рынок привязано к одной платформе
+- Матчинг между платформами реализуем сами через `utils/matching/matcher.ts`:
+  - Приоритет: матчинг по `event_id` из PolyRouter (точный)
+  - Fallback: строковое сходство через `string-similarity` (порог 0.5)
+
+**Архитектура:**
+1. PolyRouter → `/markets-v2`, `/events`, `/search-v2` → сырые данные
+2. Нормализация → `utils/normalizers/polyrouter-normalizer.ts`
+3. Матчинг → `utils/matching/matcher.ts`
+4. Сохранение в БД → `lib/db/matches.ts`
+
+### Альтернативный подход: Прямая интеграция
+
+Для информации о том, как можно было бы реализовать интеграцию напрямую с каждой платформой (без PolyRouter), см. [api-integration-plan.md](./api-integration-plan.md).
+
+Этот подход даёт больше контроля, но требует больше кода и поддержки:
+- Отдельный клиент для каждой платформы (GraphQL для Polymarket, REST для Manifold/Kalshi)
+- Собственные нормализаторы для каждой платформы
+- Управление rate limits и ошибками для каждого API отдельно
+
+### Настройка API ключа
+
+1. Получите бесплатный API ключ на [polyrouter.io](https://polyrouter.io) (занимает 30 секунд)
+
+2. Добавьте в `.env.local`:
+```env
+POLYROUTER_API_KEY=pk_your_api_key_here
+POLYROUTER_API_URL=https://api.polyrouter.io/functions/v1
+```
+
+3. Для Vercel: добавьте `POLYROUTER_API_KEY` в Environment Variables в настройках проекта
+
+**Важно:** API ключ используется только на сервере (API routes), не передаётся на клиент.
 

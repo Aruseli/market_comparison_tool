@@ -1,0 +1,124 @@
+{"markets":
+  {"platforms":[
+    {
+      "platform": "polymarket",
+      "display_name": "Polymarket",
+      "endpoints": {
+        "markets":true,
+        "events":true,
+        "series":true,
+        "search":true,
+        "price_history":true
+      },
+      "features": {
+        "status_filtering":true,
+        "date_filtering":true,
+        "pagination_type":"offset",
+        "market_types":[
+          "binary","categorical"
+          ]
+      },
+      "id_format": {
+        "description":"Numeric market IDs or 0x-prefixed hex strings",
+        "example":"516710",
+        "pattern":"^\\d+$|^0x[a-fA-F0-9]+$"},
+        "base_url":"https://gamma-api.polymarket.com",
+        "rate_limit":"100 req/min"
+      },
+    {
+      "platform":"kalshi",
+      "display_name":"Kalshi",
+      "endpoints": {
+        "markets":true,
+        "events":true,
+        "series":true,
+        "search":true,
+        "price_history":true
+      },
+      "features": {
+        "status_filtering":true,
+        "date_filtering":true,
+        "pagination_type":"cursor",
+        "market_types":["binary"]
+      },
+      "id_format": {
+        "description":"Ticker symbols starting with KX",
+        "example":"KXMVENFLMULTIGAMEEXTENDED-S2025A0E563099C2-2D8CBFF225B",
+        "pattern":"^KX[A-Z0-9\\-]+$"},
+        "base_url":"https://api.elections.kalshi.com",
+        "rate_limit":"1000 req/min"
+      },  
+    {
+      "platform": "limitless",
+      "display_name": "Limitless",
+      "endpoints": {
+        "markets":true,
+        "events":false,
+        "series":false,
+        "search":true,
+        "price_history":true
+      },
+      "features": {
+        "status_filtering":false,
+        "date_filtering":false,
+        "pagination_type":"offset",
+        "market_types": [
+          "binary","categorical"
+          ]
+      },
+      "id_format": {
+        "description":"Market slugs (lowercase with hyphens)",
+        "example":"will-elon-musk-rejoin-the-trump-administration-this-year-1749202282770",
+        "pattern":"^[a-z0-9\\-]+$"},
+        "base_url":"https://api.limitless.exchange",
+        "rate_limit":"200 req/min (estimated)"},{"platform":"manifold",
+        "display_name":"Manifold Markets",
+        "endpoints": {
+          "markets":true,
+          "events":false,
+          "series":false,
+          "search":true,
+          "price_history":false
+        },
+        "features": {
+          "status_filtering":true,
+          "date_filtering":false,
+          "pagination_type":"offset",
+          "market_types":[
+            "binary","categorical","numeric","poll","bounty"
+          ]
+        },
+        "id_format": {
+          "description":"Alphanumeric IDs or UUIDs",
+          "example":"P6RhQltqPE",
+          "pattern":"^[a-zA-Z0-9]+$|^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"},
+          "base_url":"https://api.manifold.markets",
+          "rate_limit":"200 req/min (estimated)"}],
+          "health": {
+            "polymarket":"healthy","kalshi":"healthy","limitless":"healthy","manifold":"healthy"},"total_platforms":4},"sports":
+  {
+    "platforms":[{"platform":"polymarket","display_name":"Polymarket Sports","endpoints":
+  {
+    "awards":true,"games":true,"list_games":true,"league_info":true},"features":
+  {
+    "odds_formats":["american","decimal","probability"],"supported_leagues":["nfl"],"market_types":["player_props","game_lines","season_awards"]},"rate_limit":"100 req/min"},{"platform":"kalshi","display_name":"Kalshi Sports","endpoints":
+  {
+    "awards":true,"games":true,"list_games":true,"league_info":true},"features":
+  {
+    "odds_formats":["american","decimal","probability"],"supported_leagues":["nfl"],"market_types":["player_props","game_lines","season_awards"]},"rate_limit":"1000 req/min"},{"platform":"prophetx","display_name":"ProphetX","endpoints":
+  {
+    "awards":true,"games":true,"list_games":true,"league_info":true},"features":
+  {
+    "odds_formats":["american","decimal","probability"],"supported_leagues":["nfl"],"market_types":["player_props","game_lines"]},"rate_limit":"Unknown"},{"platform":"novig","display_name":"Novig","endpoints":
+  {
+    "awards":true,"games":true,"list_games":true,"league_info":true},"features":
+  {
+    "odds_formats":["american","decimal","probability"],"supported_leagues":["nfl"],"market_types":["player_props","game_lines"]},"rate_limit":"Unknown"},{"platform":"sxbet","display_name":"SX.bet","endpoints":
+  {
+    "awards":true,"games":true,"list_games":true,"league_info":true},"features":
+  {
+    "odds_formats":["american","decimal","probability"],"supported_leagues":["nfl"],"market_types":["player_props","game_lines"]},"rate_limit":"Unknown"}],"health":
+  {
+    "polymarket":"healthy","kalshi":"healthy","prophetx":"healthy","novig":"healthy","sxbet":"healthy"},"total_platforms":5},"meta":
+  {
+    "request_time":1764351730475,"timestamp":"2025-11-28T17:42:10.475Z","version":"2.1.0"}}

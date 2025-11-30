@@ -1,0 +1,77 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Event {
+  id              String   @id
+  normalizedTitle String
+  description     String?
+  category        String
+  tags            String[] @default([])
+  resolutionDate  DateTime?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  markets         Market[]
+  matches         Match[]
+
+  @@index([category])
+  @@index([normalizedTitle])
+}
+
+model Market {
+  id            String   @id
+  eventId       String?
+  platform      String
+  originalTitle String
+  probability   Float?
+  volume        BigInt?
+  liquidity     BigInt?
+  link          String?
+  updatedAt     DateTime @updatedAt
+
+  event         Event?   @relation(fields: [eventId], references: [id], onDelete: Cascade)
+  snapshots     MarketSnapshot[]
+
+  @@index([platform])
+  @@index([eventId])
+  @@index([updatedAt])
+}
+
+model Match {
+  id              String   @id @default(uuid())
+  eventId         String   @unique
+  minProbability  Float
+  maxProbability  Float
+  spread          Float
+  platformsCount  Int
+  confidence      Float?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  event           Event    @relation(fields: [eventId], references: [id], onDelete: Cascade)
+
+  @@index([spread])
+  @@index([updatedAt])
+}
+
+model MarketSnapshot {
+  id         String   @id @default(uuid())
+  marketId   String
+  probability Float
+  volume     BigInt?
+  liquidity  BigInt?
+  createdAt  DateTime @default(now())
+
+  market     Market   @relation(fields: [marketId], references: [id], onDelete: Cascade)
+
+  @@index([marketId, createdAt])
+}
